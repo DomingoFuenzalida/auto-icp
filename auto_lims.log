@@ -1,0 +1,32 @@
+2025-12-23 16:49:08,765 - INFO - Cargando configuración desde C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\.env
+2025-12-23 16:49:08,767 - INFO - Iniciando monitoreo en: C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims
+2025-12-23 16:49:08,767 - INFO - Salida procesados: C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims_processed
+2025-12-23 16:49:08,767 - INFO - Salida errores: C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims_errors
+2025-12-23 16:51:24,789 - INFO - --- Procesando archivo: C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv ---
+2025-12-23 16:51:25,213 - INFO - Importación exitosa: 560 filas.
+2025-12-23 16:51:25,215 - INFO - Archivo movido a: C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims_processed\LIMS Report.csv
+2025-12-23 16:51:46,219 - INFO - --- Procesando archivo: C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv ---
+2025-12-23 16:51:46,629 - INFO - Importación exitosa: 560 filas.
+2025-12-23 16:51:46,632 - ERROR - Error moviendo archivo C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv: [WinError 2] El sistema no puede encontrar el archivo especificado
+2025-12-23 16:52:17,637 - INFO - --- Procesando archivo: C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv ---
+2025-12-23 16:52:17,637 - ERROR - ERROR PROCESANDO C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv: [Errno 2] No such file or directory: 'C:\\Users\\Domingo Fuenzalida\\OneDrive - miuandes.cl\\Escritorio\\Computación\\Aclara\\ISP\\Auto\\lims\\LIMS Report.csv'
+Traceback (most recent call last):
+  File "C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\auto_lims.py", line 134, in process_file
+    with open(file_path, 'r', encoding='utf-8', errors='replace') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Domingo Fuenzalida\\OneDrive - miuandes.cl\\Escritorio\\Computación\\Aclara\\ISP\\Auto\\lims\\LIMS Report.csv'
+2025-12-23 16:52:17,672 - ERROR - Error moviendo archivo C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv: [WinError 2] El sistema no puede encontrar el archivo especificado
+2025-12-23 16:54:44,410 - INFO - Cargando configuración desde c:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\.env
+2025-12-23 16:54:44,412 - INFO - Iniciando monitoreo en: c:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims
+2025-12-23 16:54:44,416 - INFO - Salida procesados: c:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims_processed
+2025-12-23 16:54:44,418 - INFO - Salida errores: c:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims_errors
+2025-12-23 16:55:08,831 - INFO - --- Procesando archivo: C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv ---
+2025-12-23 16:55:09,413 - ERROR - ERROR PROCESANDO C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv: llave duplicada viola restricción de unicidad «pg_type_typname_nsp_index»
+DETAIL:  Ya existe la llave (typname, typnamespace)=(lims_backup_historico, 2200).
+Traceback (most recent call last):
+  File "C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\auto_lims.py", line 203, in process_file
+    cur.execute(create_query)
+psycopg2.errors.UniqueViolation: llave duplicada viola restricción de unicidad «pg_type_typname_nsp_index»
+DETAIL:  Ya existe la llave (typname, typnamespace)=(lims_backup_historico, 2200).
+
+2025-12-23 16:55:09,419 - ERROR - Error moviendo archivo C:\Users\Domingo Fuenzalida\OneDrive - miuandes.cl\Escritorio\Computación\Aclara\ISP\Auto\lims\LIMS Report.csv: [WinError 2] El sistema no puede encontrar el archivo especificado
