@@ -1,0 +1,12 @@
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+auto_lims.log
+
+# Local directories
+lims/
+lims_processed/
+lims_errors/
