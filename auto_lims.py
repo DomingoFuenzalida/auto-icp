@@ -30,9 +30,9 @@ def load_env_config():
     config = {
         "DB_HOST": "localhost",
         "DB_PORT": "5432",
-        "DB_NAME": "ISP-DB",#<------------------   Database
-        "DB_USER": "postgres",#<------------------   User
-        "DB_PASS":"********"#<------------------   Password
+        "DB_NAME": "ISP-DB", #<------------------   Database
+        "DB_USER": "postgres", #<------------------   User
+        "DB_PASS": None #<------------------   Password
     }
     if os.path.exists(ENV_FILE):
         logging.info(f"Cargando configuración desde {ENV_FILE}")
